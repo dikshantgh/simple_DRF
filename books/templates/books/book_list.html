@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Welcome to my website.!!</h1>
+<h4>The list of books are below:</h4><hr>
+{% for book in book_list %}
+<ul>
+    <li>Title : {{ book.title }}</li>
+    <li>Subtitle : {{ book.subtitle }}</li>
+    <li>Author : {{ book.author }}</li>
+    <li>ISBN : {{ book.isbn }}</li>
+    <hr>
+</ul>
+
+{% endfor %}
+</body>
+</html>
